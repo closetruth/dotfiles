@@ -1,0 +1,36 @@
+{
+  "inbound": {
+    "port": 1080,
+    "listen": "127.0.0.1",
+    "protocol": "http",
+    "domainOverride": ["tls","http"],
+    "settings": {
+      "auth": "noauth",
+      "udp": false
+    }
+  },
+  "outbound": {
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "www.example.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "f4c36ee6-0fdf-d0ff-a0a4-a5a333d635c6"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "wsSettings": {
+        "path": "/d2yXDah4Wb13b"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,5 @@
+deb https://mirrors.huaweicloud.com/debian/ bookworm main non-free-firmware non-free contrib 
+deb https://mirrors.ustc.edu.cn/debian/ bookworm main non-free-firmware non-free contrib 
+#deb https://mirror.nju.edu.cn/debian/ bookworm main non-free-firmware non-free contrib
+#deb https://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib
+
