@@ -23,12 +23,15 @@ restore_session() {
         elif [[ "$app" == "com.github.johnfactotum.foliate" ]]; then
           app="flatpak run com.github.johnfactotum.Foliate"
         fi
-        echo "Representation: $app\n"
-        startapp="${startapp}swaymsg workspace ${num}; swaymsg exec ${app}; "
+        echo "Representation: $app"
+        #startapp="${startapp}swaymsg workspace ${num}; swaymsg exec ${app}; "
+        echo "Run: swaymsg workspace ${num} && swaymsg exec ${app}, sleep 3\n"
+        eval swaymsg workspace ${num} && swaymsg exec ${app}
+        sleep 3
       done
     done
-    echo "$startapp"
-    eval $startapp
+    #echo "$startapp"
+    #eval $startapp
   else
     echo "No session file found."
   fi
