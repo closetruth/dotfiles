@@ -1,15 +1,5 @@
 /*
-img, [role="img"], video, iframe {
-  filter: brightness(60%) !important;
-}
-
-
-* {
-  color: #C0BFBC !important;
-}
-*/
-
 * {
     filter: grayscale(100%);
-    /*font-weight: normal !important;*/
 }
+*/

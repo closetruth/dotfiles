@@ -1,14 +1,7 @@
-/*
-.header, #nv_portal .vw .h.hm,
-.td_module_flex_2 .td-image-wrap ,
-img, [role="img"], 
-video, iframe {
-  filter: brightness(60%) !important;
-}
-*/
-
-a {
-  color: #FFFFFF !important;
+video {
+  filter: grayscale(1) invert(1);
 }
 
-
+img {
+  filter: grayscale(1);
+}

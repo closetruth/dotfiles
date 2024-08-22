@@ -26,7 +26,6 @@ i  busybox - Tiny utilities for small and embedded systems
 i  ca-certificates - Common CA certificates
 i  calibre - powerful and easy to use e-book manager
 i  cargo - Rust package manager
-i  chromium - web browser
 i  clang-16 - C, C++ and Objective-C compiler
 i  clangd-16 - Language server that provides IDE-like features to editors
 i  code - Code editing. Redefined.
@@ -107,6 +106,7 @@ i  iproute2 - networking and traffic control tools
 i  iputils-ping - Tools to test the reachability of network hosts
 i  isc-dhcp-client - DHCP client for automatically obtaining an IP address
 i  isc-dhcp-common - common manpages relevant to all of the isc-dhcp packages
+i  jq - lightweight and flexible command-line JSON processor
 i  kmod - tools for managing Linux kernel modules
 i  less - pager program similar to more
 i  lf - terminal file manager written in Go
