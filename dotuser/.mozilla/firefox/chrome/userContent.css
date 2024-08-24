@@ -1,0 +1,7 @@
+video {
+  filter: grayscale(1) invert(1);
+}
+
+img {
+  filter: grayscale(1);
+}
