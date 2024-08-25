@@ -19,7 +19,7 @@ restore_session() {
       echo "Workspace number: $num"
       for app in $(echo "$representation"); do
         if [[ "$app" == "firefox" ]]; then
-          app="firefox-bin"
+          app="MOZ_ENABLE_WAYLAND=0 firefox-opt"
         elif [[ "$app" == "com.github.johnfactotum.foliate" ]]; then
           app="flatpak run com.github.johnfactotum.Foliate"
         fi
