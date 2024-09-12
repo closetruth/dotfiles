@@ -1,0 +1,15 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "f4c36ee6-0fdf-d0ff-a0a4-a5a333d635c6"
+    ],
+    "ssl": {
+        "cert": "/etc/letsencrypt/live/www.example.com/fullchain.pem",
+        "key": "/etc/letsencrypt/live/www.example.com/privkey.pem"
+    }
+}
+
