@@ -10,7 +10,7 @@
             "cwd": "${fileDirname}",
             //"cwd": "/usr/src/glibc/glibc-2.36",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false, //"externalConsole": true,
             "MIMode": "gdb",
             "setupCommands": [
                 {
