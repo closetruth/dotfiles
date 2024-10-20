@@ -69,15 +69,12 @@ i  firmware-linux-free - Binary firmware for various drivers in the Linux kernel
 i  flatpak - Application deployment framework for desktop apps
 i  fontconfig - generic font configuration library - support binaries
 i  fonts-dejavu-core - Vera font family derivate with additional characters
-i  fonts-firacode - Monospaced font with programming ligatures
-i  fonts-font-awesome - iconic font designed for use with Twitter Bootstrap
 i  fonts-jetbrains-mono - free and open-source typeface for developers
 i  fonts-liberation - Fonts with the same metrics as Times, Arial and Courier
 i  fonts-noto-color-emoji - color emoji font from Google
 i  fonts-noto-ui-core - "No Tofu" font families with large Unicode coverage (UI core)
 i  fonts-noto-ui-extra - "No Tofu" font families with large Unicode coverage (UI extra)
 i  gcc-12-base - GCC, the GNU Compiler Collection (base package)
-i  gcolor3 - Simple GTK3 color selector and picker
 i  gdb - GNU Debugger
 i  gdisk - GPT fdisk text-mode partitioning tool
 i  gimp - GNU Image Manipulation Program
@@ -235,8 +232,12 @@ i  libxxf86vm1 - X11 XFree86 video mode extension library
 i  libxxhash0 - shared library for xxhash
 i  libzstd1 - fast lossless compression algorithm
 i  light - control display backlight controllers and LEDs
+i  linux-headers-6.0.0-6-amd64 - Header files for Linux 6.0.0-6-amd64
+i  linux-headers-6.0.0-6-common - Common header files for Linux 6.0.0-6
 i  linux-headers-amd64 - Header files for Linux amd64 configuration (meta-package)
+i  linux-image-6.0.0-6-amd64 - Linux 6.0 for 64-bit PCs (signed)
 i  linux-image-amd64 - Linux for 64-bit PCs (meta-package)
+i  linux-kbuild-6.0 - Kbuild infrastructure for Linux 6.0
 i  locales - GNU C Library: National Language (locale) data [support]
 i  login - system login tools
 i  logrotate - Log rotation utility
@@ -260,7 +261,6 @@ i  nftables - Program to control packet filtering rules by Netfilter project
 i  nix-bin - Purely functional package manager (binaries)
 i  nix-setup-systemd - Purely functional package manager (systemd setup)
 i  nmap - The Network Mapper
-i  nmon - performance monitoring tool for Linux
 i  nodejs - evented I/O for V8 javascript - runtime executable
 i  npm - package manager for Node.js
 i  ntfs-3g - read/write NTFS driver for FUSE
@@ -275,11 +275,11 @@ i  passwd - change and administer password and group data
 i  pavucontrol - PulseAudio Volume Control
 i  pciutils - PCI utilities
 i  perl-base - minimal Perl system
-i  pipewire-alsa - PipeWire ALSA plugin
 i  pipewire-pulse - PipeWire PulseAudio daemon
 i  plocate - much faster locate
 i  podman - engine to run OCI-based containers in Pods
 i  procps - /proc file system utilities
+i  proxychains - proxy chains - redirect connections through proxy servers
 i  python3-pip - Python package installer
 i  python3-tk - Tkinter - Writing Tk applications with Python 3.x
 i  python3.11-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.11)
@@ -291,7 +291,6 @@ i  readline-common - GNU readline and history libraries, common files
 i  redshift - Adjusts the color temperature of your screen
 i  ristretto - lightweight picture-viewer for the Xfce desktop environment
 i  rtkit - Realtime Policy and Watchdog Daemon
-i  screen - terminal multiplexer with VT100/ANSI terminal emulation
 i  seatd - minimal user, seat and session management daemon
 i  sed - GNU stream editor for filtering/transforming text
 i  sensible-utils - Utilities for sensible alternative selection
@@ -302,13 +301,10 @@ i  sway - i3-compatible Wayland compositor
 i  swaybg - Wallpaper utility for Wayland compositors
 i  swayidle - Idle management daemon for Wayland
 i  swaylock - Screen locker for Wayland
-i  synaptic - Graphical package manager
 i  systemd - system and service manager
 i  systemd-sysv - system and service manager - SysV compatibility symlinks
 i  sysvinit-utils - System-V-like utilities
 i  tar - GNU version of the tar archiving utility
-i  tasksel - tool for selecting tasks for installation on Debian systems
-i  tasksel-data - official tasks used for installation of Debian systems
 i  tesseract-ocr - Tesseract command line OCR tool
 i  thunar - File Manager for Xfce
 i  thunar-archive-plugin - Archive plugin for Thunar file manager

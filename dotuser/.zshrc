@@ -1,7 +1,8 @@
 #环境变量
 
 # 配置
-PROMPT='%F{5}[%n@%m %~]%# %f'
+#PROMPT='%F{5}[%n@%m %~]%# %f'
+PROMPT='%F{13}[%n@%m %~]%# %f'
 
 # 历史记录
 HISTFILE=~/.histfile
@@ -40,13 +41,13 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # 高亮颜色
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#CC0000'
-ZSH_HIGHLIGHT_STYLES[command]='fg=#008800'
-#ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#ED80FF'
-#ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#CD70DC'
-#ZSH_HIGHLIGHT_STYLES[path]='fg=#67C7D7'
-#ZSH_HIGHLIGHT_STYLES[precommand]='fg=#D3DB6E'
-#ZSH_HIGHLIGHT_STYLES[builtin]='fg=#DAB46C'
-
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#FF0000' #'fg=#CC0000'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#00FF00'  #'fg=#008800'
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#ED80FF'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#CD70DC'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#67C7D7'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#D3DB6E'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#DAB46C'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=#FFFF00'
 
 
