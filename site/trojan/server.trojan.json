@@ -9,7 +9,8 @@
     ],
     "ssl": {
         "cert": "/etc/letsencrypt/live/www.example.com/fullchain.pem",
-        "key": "/etc/letsencrypt/live/www.example.com/privkey.pem"
+        "key": "/etc/letsencrypt/live/www.example.com/privkey.pem",
+        "fallback_port": 1234
     }
 }
 
