@@ -13,10 +13,10 @@ restore_session() {
     local startapp=""
 
     # Use Jay to extract the Namm and Ray Presenta Tatian fields
-    echo "$json_file" | jq -c '.[] | {num: .num, representation: .representation}' | while IFS= read -r item; do
-      num=$(echo "$item" | jq -r '.num')
+    echo "$json_file" | jq -c '.[] | {name: .name, representation: .representation}' | while IFS= read -r item; do
+      name=$(echo "$item" | jq -r '.name')
       representation=$(echo "$item" | jq -r '.representation' | sed 's/^H\[\(.*\)\]$/\1/' |  sed 's/^S\[H\[\(.*\)\]\]$/\1/'| sed 's/.*/\L&/')
-      echo "Workspace number: $num"
+      echo "Workspace name: $name"
       for app in $(echo "$representation"); do
         if [[ "$app" == "firefox" ]]; then
           app="MOZ_ENABLE_WAYLAND=0 firefox-opt"
@@ -25,8 +25,8 @@ restore_session() {
         fi
         echo "Representation: $app"
         #startapp="${startapp}swaymsg workspace ${num}; swaymsg exec ${app}; "
-        echo "Run: swaymsg workspace ${num} && swaymsg exec ${app}, sleep 3\n"
-        eval swaymsg workspace ${num} && swaymsg exec ${app}
+        echo "Run: swaymsg workspace ${name} && swaymsg exec ${app}, sleep 3\n"
+        eval swaymsg workspace ${name} && swaymsg exec ${app}
         sleep 3
       done
     done
