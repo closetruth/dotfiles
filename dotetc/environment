@@ -9,3 +9,6 @@ QT_IM_MODULE=fcitx
 #wofi
 XDG_DATA_DIRS=/home/h/.local/share/flatpak/exports/share:/usr/local/share/:/usr/share/
 
+#firefox
+MOZ_ENABLE_WAYLAND=0
+
