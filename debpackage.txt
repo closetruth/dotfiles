@@ -319,6 +319,7 @@ i  usbutils - Linux USB utilities
 i  usr-is-merged - Transitional package to assert a merged-/usr system
 i  util-linux - miscellaneous system utilities
 i  util-linux-extra - interactive login tools
+i  v2raya - A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols
 i  va-driver-all - Video Acceleration (VA) API -- driver metapackage
 i  vim - Vi IMproved - enhanced vi editor
 i  vim-common - Vi IMproved - Common files
