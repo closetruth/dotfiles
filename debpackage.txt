@@ -182,9 +182,7 @@ i  libproc2-0 - library for accessing process information from /proc
 i  libpython3.11 - Shared Python runtime library (version 3.11)
 i  libreadline8 - GNU readline and history libraries, run-time libraries
 i  libreoffice - office productivity suite (metapackage)
-i  libreoffice-draw - office productivity suite -- drawing
 i  libreoffice-gtk3 - office productivity suite -- GTK+ 3 integration
-i  libreoffice-writer - office productivity suite -- word processor
 i  libsdl2-2.0-0 - Simple DirectMedia Layer
 i  libseccomp2 - high level interface to Linux seccomp filter
 i  libselinux1 - SELinux runtime shared libraries
@@ -281,6 +279,7 @@ i  podman - engine to run OCI-based containers in Pods
 i  procps - /proc file system utilities
 i  proxychains - proxy chains - redirect connections through proxy servers
 i  python3-pip - Python package installer
+i  python3-pygame - SDL bindings for games development (Python 3)
 i  python3-tk - Tkinter - Writing Tk applications with Python 3.x
 i  python3.11-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.11)
 i  qt5ct - Qt5 Configuration Utility
@@ -295,6 +294,7 @@ i  seatd - minimal user, seat and session management daemon
 i  sed - GNU stream editor for filtering/transforming text
 i  sensible-utils - Utilities for sensible alternative selection
 i  signing-party - Various OpenPGP related tools
+i  softmaker-freeoffice-2024 - SoftMaker FreeOffice is a complete office suite.
 i  speedtest-cli - Command line interface for testing internet bandwidth using speedtest.net
 i  sudo - Provide limited super user privileges to specific users
 i  sway - i3-compatible Wayland compositor
