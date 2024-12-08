@@ -2,4 +2,5 @@
     "suggest.noselect": true
     "clangd.path": "clangd-16"
     "lua.path": "lua5.4"
+    "http.proxy": "http:127.0.0.1:1080",
 }
