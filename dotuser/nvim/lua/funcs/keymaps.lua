@@ -17,8 +17,4 @@ keyset("n", "<leader>s", ":x<CR>")
 keyset("n", "<leader>q", ":q!<CR>")
 keyset("n", "<A-l>", ":BufferLineCycleNext<CR>")
 keyset("n", "<A-h>", ":BufferLineCyclePrev<CR>")
-keyset("n", "<leader>bd", ":bdelete<CR>")
-
-
-
-
+keyset("n", "<A-d>", ":bdelete<CR>")
