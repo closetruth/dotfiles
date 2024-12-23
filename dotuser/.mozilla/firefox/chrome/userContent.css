@@ -1,4 +1,4 @@
-/* Process the video and img to grayscale, invert video colors(将视频和图片处理为灰度,反转视频颜色) */
+/* Grayscale videos and images (将视频和图片处理为灰度) */
 video {
   filter: grayscale(1) invert(1);
 }
@@ -7,57 +7,21 @@ img {
   filter: grayscale(1);
 }
 
-
-/* Blocking recommended content(屏蔽推荐内容) */
-/* Block follower, recommendations, hot lists, and videos from the Zhihu homepage(屏蔽知乎首页的关注,推荐,热榜,视频) */
+/* Block recommended content (屏蔽推荐内容) */
 @-moz-document domain("zhihu.com") {
   .Topstory-content {
-    display: none !important;
+    display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
   }
 }
 
-/* Block video recommendations on Bilibili homepage(屏蔽哔哩哔哩首页的视频推荐) */
-@-moz-document domain("bilibili.com") { 
-   .container.is-version8 {
-    display: none !important;
-  }
-}
-
-/* Block video categories on Bilibili homepage(屏蔽哔哩哔哩首页的视频分类) */
 @-moz-document domain("bilibili.com") {
-  .bili-header__channel {
-    display: none !important;
+  /* Block recommendations and other elements on Bilibili homepage (屏蔽哔哩哔哩首页的推荐内容和其他元素) */
+  .container.is-version8,       /* Video recommendations (视频推荐) */
+  .bili-header__channel,        /* Video categories (视频分类) */
+  .recommend-list-v1,          /* Video recommendations while playing (播放时的视频推荐) */
+  .left-entry,                  /* Upper left column (左上栏目) */
+  .bili-video-card__image.__scale-player-wrap, /* Search result images (搜索视频的图片) */
+  .bili-header__banner {       /* Background image (背景图片) */
+    display: none !important;   /* Hide selected elements (隐藏选定的元素) */
   }
 }
-
-/* Block video recommendations when playing videos on Bilibili(屏蔽哔哩哔哩播放视频时的视频推荐) */
-@-moz-document domain("bilibili.com") {
-  .recommend-list-v1 {
-    display: none !important;
-  }
-}
-
-/* Block the upper left column of Bilibili(屏蔽哔哩哔哩的左上栏目) */
-@-moz-document domain("bilibili.com") {
-  .left-entry {
-    display: none !important;
-  }
-}
-
-
-/* Block pictures(屏蔽图片) */
-/* Block images on Bilibili search videos(屏蔽哔哩哔哩搜索视频上的图片) */
-@-moz-document domain("bilibili.com") {
-  .bili-video-card__image.__scale-player-wrap {
-    display: none !important;
-  }
-}
-
-/* Block background images on Bilibili(屏蔽哔哩哔哩的背景图片) */
-@-moz-document domain("bilibili.com") {
-  .bili-header__banner {
-    display: none !important;
-  }
-}
-
-
