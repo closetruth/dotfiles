@@ -1,4 +1,4 @@
-/* Grayscale videos and images (将视频和图片处理为灰度) */
+/* Grayscale videos and images, invert video colors (将视频和图片处理为灰度,反转视频颜色) */
 video {
   filter: grayscale(1) invert(1);
 }
