@@ -39,6 +39,7 @@ img {
   /* Mobile version(手机端) */
   .channel-menu,           /* Video recommendations (视频推荐) */
   .m-home,              /* Video categories (视频分类) */
+  .launch-app-btn.v-card-toapp, /* Video recommendations while playing (播放时的视频推荐) */
   .pic-box {           /* Search result images (搜索视频的图片) */
     display: none !important;   /* Hide selected elements (隐藏选定的元素) */
   }
