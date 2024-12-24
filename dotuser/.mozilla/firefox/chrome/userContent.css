@@ -10,31 +10,36 @@ img {
 
 /* Block recommended content (屏蔽推荐内容) */
 /* zhihu.com(知乎) */
-/* pc(电脑端) */
-.Topstory-content {
-  display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
-}
+@-moz-document domain("zhihu.com") { /* The mobile phone needs to delete the moz outer code(手机端需要删除moz外层代码) */
+  /* pc(电脑端) */
+  .Topstory-content {
+    display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
+  }
 
-/* Mobile version(手机端) */
-.TopstoryMain {
-  display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
+  /* Mobile version(手机端) */
+  .TopstoryMain {
+    display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
+  }
 }
 
 
 /* Block recommendations and other elements on Bilibili homepage (屏蔽哔哩哔哩首页的推荐内容和其他元素) */
 /* bilibili.com(哔哩哔哩) */
-/* pc(电脑端) */
-.container.is-version8,       /* Video recommendations (视频推荐) */
-.bili-header__channel,        /* Video categories (视频分类) */
-.recommend-list-v1,          /* Video recommendations while playing (播放时的视频推荐) */
-.left-entry,                  /* Upper left column (左上栏目) */
-.bili-video-card__image.__scale-player-wrap, /* Search result images (搜索视频的图片) */
-.bili-header__banner {       /* Background image (背景图片) */
-  display: none !important;   /* Hide selected elements (隐藏选定的元素) */
-}
+@-moz-document domain("bilibili.com") { /* The mobile phone needs to delete the moz outer code(手机端需要删除moz外层代码) */
+  /* pc(电脑端) */
+  .container.is-version8,       /* Video recommendations (视频推荐) */
+  .bili-header__channel,        /* Video categories (视频分类) */
+  .recommend-list-v1,          /* Video recommendations while playing (播放时的视频推荐) */
+  .left-entry,                  /* Upper left column (左上栏目) */
+  .bili-video-card__image.__scale-player-wrap, /* Search result images (搜索视频的图片) */
+  .bili-header__banner {       /* Background image (背景图片) */
+    display: none !important;   /* Hide selected elements (隐藏选定的元素) */
+  }
 
-/* Mobile version(手机端) */
-.channel-menu,           /* Video recommendations (视频推荐) */
-.m-home {             /* Video categories (视频分类) */
-  display: none !important;   /* Hide selected elements (隐藏选定的元素) */
+  /* Mobile version(手机端) */
+  .channel-menu,           /* Video recommendations (视频推荐) */
+  .m-home,              /* Video categories (视频分类) */
+  .pic-box {           /* Search result images (搜索视频的图片) */
+    display: none !important;   /* Hide selected elements (隐藏选定的元素) */
+  }
 }
