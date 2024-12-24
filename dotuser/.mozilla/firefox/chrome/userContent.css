@@ -10,7 +10,7 @@ img {
 
 /* Block recommended content (屏蔽推荐内容) */
 /* zhihu.com(知乎) */
-@-moz-document domain("zhihu.com") { /* The mobile phone needs to delete the moz outer code(手机端需要删除moz外层代码) */
+@-moz-document domain("zhihu.com") { 
   /* pc(电脑端) */
   .Topstory-content {
     display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
@@ -25,7 +25,7 @@ img {
 
 /* Block recommendations and other elements on Bilibili homepage (屏蔽哔哩哔哩首页的推荐内容和其他元素) */
 /* bilibili.com(哔哩哔哩) */
-@-moz-document domain("bilibili.com") { /* The mobile phone needs to delete the moz outer code(手机端需要删除moz外层代码) */
+@-moz-document domain("bilibili.com") { 
   /* pc(电脑端) */
   .container.is-version8,       /* Video recommendations (视频推荐) */
   .bili-header__channel,        /* Video categories (视频分类) */
