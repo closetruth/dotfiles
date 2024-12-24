@@ -17,6 +17,7 @@ img {
   }
 
   /* Mobile version(手机端) */
+  .List,
   .TopstoryMain {
     display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
   }
