@@ -37,7 +37,7 @@ img {
   .bili-header__channel,        /* Video categories (视频分类) */
   .recommend-list-v1,          /* Video recommendations while playing (播放时的视频推荐) */
   .left-entry,                  /* Upper left column (左上栏目) */
-  .bili-video-card__image.__scale-player-wrap, /* Search result images (搜索视频的图片) */
+  .v-img.bili-video-card__cover,  /* Search result images (搜索视频的图片) */
   .bili-header__banner {       /* Background image (背景图片) */
     display: none !important;   /* Hide selected elements (隐藏选定的元素) */
   }
