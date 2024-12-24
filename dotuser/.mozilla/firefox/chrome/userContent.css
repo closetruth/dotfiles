@@ -12,12 +12,15 @@ img {
 /* zhihu.com(知乎) */
 @-moz-document domain("zhihu.com") { 
   /* pc(电脑端) */
-  .Topstory-content {
+  .Topstory-content   /* Honepage(主页) */
+  .Recommendations-Main   /* Recommendations under the article(文章下的推荐) */
+  {
     display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
   }
 
   /* Mobile version(手机端) */
   .TopstoryMain    /* Honepage(主页) */
+  .List-item.NotLoggedInTopstoryItem    /* Honepage(主页) */
   .Post-Sub.Post-Sub-Mobile     /* Recommendations under the article(文章下的推荐) */
   {
     display: none !important; /* Hide Zhihu's top story content (隐藏知乎首页推荐内容) */
