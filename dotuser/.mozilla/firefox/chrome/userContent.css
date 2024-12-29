@@ -33,20 +33,29 @@ img {
 /* bilibili.com(哔哩哔哩) */
 @-moz-document domain("bilibili.com") { 
   /* pc(电脑端) */
+  #commentapp,                  /* Comments(评论) */
+  .search-panel,                 /* Searches for hot searches(搜索的热搜) */
   .container.is-version8,       /* Video recommendations (视频推荐) */
   .bili-header__channel,        /* Video categories (视频分类) */
   .recommend-list-v1,          /* Video recommendations while playing (播放时的视频推荐) */
   .left-entry,                  /* Upper left column (左上栏目) */
   .v-img.bili-video-card__cover,  /* Search result images (搜索视频的图片) */
+  .pop-live-small-mode.part-1,  /* Live streaming recommendations while watching videos(看视频时的直播推荐) */
   .bili-header__banner {       /* Background image (背景图片) */
     display: none !important;   /* Hide selected elements (隐藏选定的元素) */
   }
 
+  input::placeholder {            /* Search recommendations(搜索推荐) */
+    color: transparent;           /* Transparent(透明) */
+  }
+
   /* Mobile version(手机端) */
-  .channel-menu,           /* Video recommendations (视频推荐) */
-  .m-home,              /* Video categories (视频分类) */
-  *.v-card-toapp, /* Video recommendations while playing (播放时的视频推荐) */
-  .pic-box {           /* Search result images (搜索视频的图片) */
+  .m-search-history,            /* History of searchs(搜索历史) */
+  .m-search-hot,               /* Hot of searchs(热搜) */
+  .channel-menu,              /* Video recommendations (视频推荐) */
+  .m-home,                    /* Video categories (视频分类) */
+  *.v-card-toapp,             /* Video recommendations while playing (播放时的视频推荐) */
+  .pic-box {                  /* Search result images (搜索视频的图片) */
     display: none !important;   /* Hide selected elements (隐藏选定的元素) */
   }
 }
