@@ -1,5 +1,5 @@
 -- 样式
-vim.o.background = "light"
+vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 

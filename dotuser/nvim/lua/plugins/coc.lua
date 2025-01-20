@@ -12,6 +12,7 @@ vim.g.coc_global_extensions = {
   "coc-java",
   "coc-json",
   "coc-snippets",
+  "coc-markdownlint",
   "https://github.com/rafamadriz/friendly-snippets@main",
 }
 
