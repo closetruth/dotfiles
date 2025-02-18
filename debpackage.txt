@@ -1,4 +1,5 @@
 i  7zip - 7-Zip file archiver with a high compression ratio
+i  acpi - displays information on ACPI devices
 i  adduser - add and remove users and groups
 i  alsa-utils - Utilities for configuring and using ALSA
 i  android-file-transfer - reliable MTP client with minimalistic UI
@@ -35,6 +36,7 @@ i  cpio - GNU cpio -- a program to manage archives of files
 i  cron - process scheduling daemon
 i  cron-daemon-common - process scheduling daemon's configuration files
 i  curl - command line tool for transferring data with URL syntax
+i  curseofwar - Fast-paced  action  strategy  game for Linux based on ncurses
 i  dash - POSIX-compliant shell
 i  debconf - Debian configuration management system
 i  debconf-i18n - full internationalization support for debconf
@@ -66,6 +68,7 @@ i  firefox-esr - Mozilla Firefox web browser - Extended Support Release (ESR)
 i  firejail - sandbox to restrict the application environment
 i  firmware-linux - Binary firmware for various drivers in the Linux kernel (metapackage)
 i  firmware-linux-free - Binary firmware for various drivers in the Linux kernel
+i  fish - friendly interactive shell
 i  flatpak - Application deployment framework for desktop apps
 i  fontconfig - generic font configuration library - support binaries
 i  fonts-dejavu-core - Vera font family derivate with additional characters
@@ -77,6 +80,7 @@ i  fonts-noto-ui-extra - "No Tofu" font families with large Unicode coverage (UI
 i  gcc-12-base - GCC, the GNU Compiler Collection (base package)
 i  gdb - GNU Debugger
 i  gdisk - GPT fdisk text-mode partitioning tool
+i  gearhead - roguelike mecha role playing game, console version
 i  gimp - GNU Image Manipulation Program
 i  git - fast, scalable, distributed revision control system
 i  glibc-source - GNU C Library: sources
@@ -119,6 +123,7 @@ i  libblkid1 - block device ID library
 i  libbpf1 - eBPF helper library (shared library)
 i  libbsd0 - utility functions from BSD systems - shared library
 i  libbz2-1.0 - high-quality block-sorting file compressor library - runtime
+i  libbz2-dev - high-quality block-sorting file compressor library - development
 i  libc-bin - GNU C Library: Binaries
 i  libc6 - GNU C Library: Shared libraries
 i  libcairo2-dev - Development files for the Cairo 2D graphics library
@@ -137,6 +142,7 @@ i  libelf1 - library to read and write ELF files
 i  libexpat1 - XML parsing C library - runtime library
 i  libext2fs2 - ext2/ext3/ext4 file system libraries
 i  libfdisk1 - fdisk partitioning library
+i  libffi-dev - Foreign Function Interface library (development files)
 i  libffi8 - Foreign Function Interface library runtime
 i  libfontconfig1 - generic font configuration library - runtime
 i  libgbm1 - generic buffer management API -- runtime
@@ -161,10 +167,12 @@ i  libkrb5-3 - MIT Kerberos runtime libraries
 i  libkrb5support0 - MIT Kerberos runtime libraries - Support library
 i  liblocale-gettext-perl - module using libc functions for internationalization in Perl
 i  liblz4-1 - Fast LZ compression algorithm library - runtime
+i  liblzma-dev - XZ-format compression library - development files
 i  liblzma5 - XZ-format compression library
 i  libmd0 - message digest functions from BSD systems - shared library
 i  libmnl0 - minimalistic Netlink communication library
 i  libmount1 - device mounting library
+i  libncursesw5-dev - transitional package for libncurses-dev
 i  libncursesw6 - shared libraries for terminal handling (wide character support)
 i  libnettle8 - low level cryptographic library (symmetric and one-way cryptos)
 i  libnewt0.52 - Not Erik's Windowing Toolkit - text mode windowing with slang
@@ -180,6 +188,7 @@ i  libpcre2-8-0 - New Perl Compatible Regular Expression Library- 8 bit runtime 
 i  libpopt0 - lib for parsing cmdline parameters
 i  libproc2-0 - library for accessing process information from /proc
 i  libpython3.11 - Shared Python runtime library (version 3.11)
+i  libreadline-dev - GNU readline and history libraries, development files
 i  libreadline8 - GNU readline and history libraries, run-time libraries
 i  libreoffice - office productivity suite (metapackage)
 i  libreoffice-gtk3 - office productivity suite -- GTK+ 3 integration
@@ -191,7 +200,9 @@ i  libsemanage2 - SELinux policy management library
 i  libsepol2 - SELinux library for manipulating binary security policies
 i  libslang2 - S-Lang programming library - runtime version
 i  libsmartcols1 - smart column output alignment library
+i  libsqlite3-dev - SQLite 3 development files
 i  libss2 - command-line interface parsing library
+i  libssl-dev - Secure Sockets Layer toolkit - development files
 i  libssl3 - Secure Sockets Layer toolkit - shared libraries
 i  libstdc++6 - GNU Standard C++ Library v3
 i  libsystemd-shared - systemd shared private library
@@ -224,6 +235,8 @@ i  libxext6 - X11 miscellaneous extension library
 i  libxfixes3 - X11 miscellaneous 'fixes' extension library
 i  libxi6 - X11 Input extension library
 i  libxinerama1 - X11 Xinerama extension library
+i  libxml2-dev - GNOME XML library - development files
+i  libxmlsec1-dev - Development files for the XML security library
 i  libxss1 - X11 Screen Saver extension library
 i  libxtables12 - netfilter xtables library
 i  libxxf86vm1 - X11 XFree86 video mode extension library
@@ -234,6 +247,7 @@ i  linux-headers-6.0.0-6-amd64 - Header files for Linux 6.0.0-6-amd64
 i  linux-headers-6.0.0-6-common - Common header files for Linux 6.0.0-6
 i  linux-headers-amd64 - Header files for Linux amd64 configuration (meta-package)
 i  linux-image-6.0.0-6-amd64 - Linux 6.0 for 64-bit PCs (signed)
+i  linux-image-6.1.0-27-amd64 - Linux 6.1 for 64-bit PCs (signed)
 i  linux-image-amd64 - Linux for 64-bit PCs (meta-package)
 i  linux-kbuild-6.0 - Kbuild infrastructure for Linux 6.0
 i  locales - GNU C Library: National Language (locale) data [support]
@@ -245,6 +259,7 @@ i  mako-notifier - lightweight notification daemon for Wayland compositors
 i  man-db - tools for reading manual pages
 i  mawk - Pattern scanning and text processing language
 i  mesa-va-drivers - Mesa VA-API video acceleration drivers
+i  mitmproxy - SSL-capable man-in-the-middle HTTP proxy
 i  mount - tools for mounting and manipulating filesystems
 i  mpv - video player based on MPlayer/mplayer2
 i  nano - small, friendly text editor inspired by Pico
@@ -276,6 +291,7 @@ i  perl-base - minimal Perl system
 i  pipewire-pulse - PipeWire PulseAudio daemon
 i  plocate - much faster locate
 i  podman - engine to run OCI-based containers in Pods
+i  policykit-1-gnome - authentication agent for PolicyKit
 i  procps - /proc file system utilities
 i  proxychains - proxy chains - redirect connections through proxy servers
 i  python3-pip - Python package installer
@@ -286,6 +302,7 @@ i  qt5ct - Qt5 Configuration Utility
 i  qt5dxcb-plugin - Qt platform theme integration plugin for DDE
 i  qt6ct - Qt6 Configuration Tool
 i  qtwayland5 - QtWayland platform plugin
+i  radeontop - Utility to show Radeon GPU utilization
 i  readline-common - GNU readline and history libraries, common files
 i  redshift - Adjusts the color temperature of your screen
 i  ristretto - lightweight picture-viewer for the Xfce desktop environment
@@ -309,6 +326,7 @@ i  tesseract-ocr - Tesseract command line OCR tool
 i  thunar - File Manager for Xfce
 i  thunar-archive-plugin - Archive plugin for Thunar file manager
 i  timeshift - System restore utility
+i  tk-dev - Toolkit for Tcl and X11 (default version) - development files
 i  tmux - terminal multiplexer
 i  traceroute - Traces the route taken by packets over an IPv4/IPv6 network
 i  trash-cli - command line trashcan utility
@@ -337,13 +355,17 @@ i  wob - lightweight overlay volume/backlight/progress bar for wayland
 i  wofi - application launcher for wlroots based wayland compositors
 i  xdg-desktop-portal-wlr - xdg-desktop-portal backend for wlroots
 i  xdg-utils - desktop integration utilities from freedesktop.org
+i  xfce4 - Meta-package for the Xfce Lightweight Desktop Environment
 i  xfce4-settings - graphical application for managing Xfce settings
 i  xfce4-terminal - Xfce terminal emulator
+i  xvfb - Virtual Framebuffer 'fake' X server
 i  xwayland - X server for running X clients under Wayland
 i  xz-utils - XZ-format compression utilities
 i  yarnpkg - Fast, reliable and secure npm alternative
+i  zangband - A single-player, text-based, roguelike game
 i  zenity - Display graphical dialog boxes from shell scripts
 i  zlib1g - compression library - runtime
+i  zlib1g-dev - compression library - development
 i  zsh - shell with lots of features
 i  zsh-autosuggestions - Fish-like fast/unobtrusive autosuggestions for zsh
 i  zsh-syntax-highlighting - Fish shell like syntax highlighting for zsh
