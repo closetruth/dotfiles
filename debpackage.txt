@@ -255,6 +255,7 @@ i  login - system login tools
 i  logrotate - Log rotation utility
 i  logsave - save the output of a command in a log file
 i  lua5.4 - Simple, extensible, embeddable programming language
+i  lxpolkit - LXDE PolicyKit authentication agent
 i  mako-notifier - lightweight notification daemon for Wayland compositors
 i  man-db - tools for reading manual pages
 i  mawk - Pattern scanning and text processing language
@@ -305,6 +306,8 @@ i  qtwayland5 - QtWayland platform plugin
 i  radeontop - Utility to show Radeon GPU utilization
 i  readline-common - GNU readline and history libraries, common files
 i  redshift - Adjusts the color temperature of your screen
+i  remmina - GTK+ Remote Desktop Client
+i  remmina-plugin-vnc - VNC plugin for Remmina
 i  ristretto - lightweight picture-viewer for the Xfce desktop environment
 i  rtkit - Realtime Policy and Watchdog Daemon
 i  seatd - minimal user, seat and session management daemon
@@ -342,7 +345,6 @@ i  va-driver-all - Video Acceleration (VA) API -- driver metapackage
 i  vim - Vi IMproved - enhanced vi editor
 i  vim-common - Vi IMproved - Common files
 i  vim-tiny - Vi IMproved - enhanced vi editor - compact version
-i  vinagre - remote desktop client for the GNOME Desktop
 i  virtualbox-7.0 - Oracle VM VirtualBox
 i  waybar - Highly customizable Wayland bar for Sway and Wlroots based compositors
 i  whiptail - Displays user-friendly dialog boxes from shell scripts
