@@ -1,7 +1,6 @@
 [{
   // "layer": "top", // Waybar at top layer
   "position": "left", // Waybar position (top|bottom|left|right)
-  "style": "~/.config/waybar/left-style.css",
   "height": 700, // Waybar height (to be removed for auto height)
   "width": 20, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
@@ -238,6 +237,7 @@
   // Choose the order of the modules
   // "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
   "modules-left": [
+    "custom/sleep_countdown",
     "custom/countdown",
     "clock",
     "custom/text",
@@ -263,8 +263,10 @@
   ],
   // Modules configuration
   "custom/countdown": {
-      "exec": "~/.config/waybar/scripts/lock_screen_timer_save.bash",
-      "format": "{}",
+      "exec": "~/.config/waybar/scripts/lock_screen_countdown.bash",
+  },
+  "custom/sleep_countdown": {
+    "exec": "~/.config/waybar/scripts/sleep_countdown.bash",
   },
   "custom/text": {
     "format": "{}",
@@ -358,7 +360,7 @@
     "spacing": 10
   },
   "clock": {
-    // "timezone": "America/New_York",
+    "timezone": "Asia/Hong_Kong",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
