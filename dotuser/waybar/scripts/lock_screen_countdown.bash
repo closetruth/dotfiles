@@ -3,7 +3,7 @@
 # 设置默认倒计时初始值
 DEFAULT_COUNTDOWN=1800
 ALERT_TIME=600   # 10 分钟提醒
-LOCK_TIME=10     # 10 秒提醒
+LOCK_TIME=60     # 60 秒提醒
 
 LOCKFILE="/tmp/lock_screen_countdown.lock"
 STATUS_FILE="/tmp/lock_screen_countdown_status"
