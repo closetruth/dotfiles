@@ -1,6 +1,7 @@
 i  7zip - 7-Zip file archiver with a high compression ratio
 i  acpi - displays information on ACPI devices
 i  adduser - add and remove users and groups
+i  alarm-clock-applet - alarm clock panel indicator
 i  alsa-utils - Utilities for configuring and using ALSA
 i  android-file-transfer - reliable MTP client with minimalistic UI
 i  apparmor - user-space parser utility for AppArmor
@@ -18,6 +19,7 @@ i  base-files - Debian base system miscellaneous files
 i  base-passwd - Debian base system master password and group files
 i  bash - GNU Bourne Again SHell
 i  bd - quickly go back to a specific parent directory in bash
+i  binfmt-support - Support for extra binary formats
 i  bleachbit - delete unnecessary files from the system
 i  bsdutils - basic utilities from 4.4BSD-Lite
 i  btrfs-compsize - calculate compression ratio of a set of files on btrfs
@@ -53,6 +55,7 @@ i  dmsetup - Linux Kernel Device Mapper userspace library
 i  dosfstools - utilities for making and checking MS-DOS FAT filesystems
 i  dpkg - Debian package management system
 i  draw.io - draw.io desktop
+i  dunst - dmenu-ish notification-daemon
 i  dwarf-fortress - Slaves to Armok: God of Blood Chapter II: Dwarf Fortress
 i  e2fsprogs - ext2/ext3/ext4 file system utilities
 i  emacs-gtk - GNU Emacs editor (with GTK+ GUI support)
@@ -255,9 +258,9 @@ i  login - system login tools
 i  logrotate - Log rotation utility
 i  logsave - save the output of a command in a log file
 i  lua5.4 - Simple, extensible, embeddable programming language
-i  lxpolkit - LXDE PolicyKit authentication agent
 i  mako-notifier - lightweight notification daemon for Wayland compositors
 i  man-db - tools for reading manual pages
+i  mate-polkit - MATE authentication agent for PolicyKit-1
 i  mawk - Pattern scanning and text processing language
 i  mesa-va-drivers - Mesa VA-API video acceleration drivers
 i  mitmproxy - SSL-capable man-in-the-middle HTTP proxy
@@ -292,13 +295,13 @@ i  perl-base - minimal Perl system
 i  pipewire-pulse - PipeWire PulseAudio daemon
 i  plocate - much faster locate
 i  podman - engine to run OCI-based containers in Pods
-i  policykit-1-gnome - authentication agent for PolicyKit
 i  procps - /proc file system utilities
-i  proxychains - proxy chains - redirect connections through proxy servers
+i  proxychains4 - redirect connections through socks/http proxies (proxychains-ng)
 i  python3-pip - Python package installer
 i  python3-pygame - SDL bindings for games development (Python 3)
 i  python3-tk - Tkinter - Writing Tk applications with Python 3.x
 i  python3.11-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.11)
+i  qemu-user-static - QEMU user mode emulation binaries (static version)
 i  qt5ct - Qt5 Configuration Utility
 i  qt5dxcb-plugin - Qt platform theme integration plugin for DDE
 i  qt6ct - Qt6 Configuration Tool
@@ -314,6 +317,7 @@ i  seatd - minimal user, seat and session management daemon
 i  sed - GNU stream editor for filtering/transforming text
 i  sensible-utils - Utilities for sensible alternative selection
 i  signing-party - Various OpenPGP related tools
+i  smartmontools - control and monitor storage systems using S.M.A.R.T.
 i  softmaker-freeoffice-2024 - SoftMaker FreeOffice is a complete office suite.
 i  speedtest-cli - Command line interface for testing internet bandwidth using speedtest.net
 i  sudo - Provide limited super user privileges to specific users
@@ -358,7 +362,7 @@ i  wofi - application launcher for wlroots based wayland compositors
 i  xdg-desktop-portal-wlr - xdg-desktop-portal backend for wlroots
 i  xdg-utils - desktop integration utilities from freedesktop.org
 i  xfce4 - Meta-package for the Xfce Lightweight Desktop Environment
-i  xfce4-settings - graphical application for managing Xfce settings
+i  xfce4-panel - panel for Xfce4 desktop environment
 i  xfce4-terminal - Xfce terminal emulator
 i  xvfb - Virtual Framebuffer 'fake' X server
 i  xwayland - X server for running X clients under Wayland

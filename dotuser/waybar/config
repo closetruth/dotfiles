@@ -270,7 +270,7 @@
   },
   "custom/text": {
     "format": "{}",
-    "exec": "sed -n '2,2p' ~/Notes/plan/index.md", // 显示文件中的内容
+    "exec": "sed -n '2,2p' ~/Notes/goal/index.md", // 显示文件中的内容
     // "exec": "./scripts/aim.bash", // 显示文件中的内容
     "interval": 1,
   },
