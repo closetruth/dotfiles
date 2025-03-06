@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置默认倒计时初始值
-DEFAULT_COUNTDOWN=1800
+DEFAULT_COUNTDOWN=3600
 ALERT_TIME=600   # 10 分钟提醒
 LOCK_TIME=60     # 60 秒提醒
 
@@ -57,7 +57,7 @@ while [ $COUNTDOWN -gt 0 ]; do
 
     # 10 秒提醒
     if [ $COUNTDOWN -eq $LOCK_TIME ]; then
-        notify-send "锁屏提醒" "即将锁屏！请做好准备！"
+        notify-send "锁屏提醒" "还有1分钟锁屏！请做好准备！"
     fi
 
     sleep 1
