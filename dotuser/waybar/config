@@ -6,31 +6,31 @@
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    // "sway/workspaces",
     "clock",
     "wlr/taskbar"
+    // "sway/workspaces",
     // "sway/mode",
     // "sway/scratchpad",
     // "custom/media"
   ],
   "modules-center": [
     // "sway/window"
-    "pulseaudio"
+    "pulseaudio",
   ],
   "modules-right": [
-    // "mpd",
     "idle_inhibitor",
-    // "network",
     "cpu",
     "memory",
-    "temperature",
+    "tray",
+    "temperature"
+      // "mpd",
+    // "battery",
+    // "network",
+    // "battery#bat2",
     // "backlight",
     // "keyboard-state",
     // "sway/language",
-    // "battery",
-    "battery#bat2",
     // "clock",
-    "tray"
   ],
   // Modules configuration
   "clock": {
@@ -235,7 +235,6 @@
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  // "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
   "modules-left": [
     "custom/sleep_countdown",
     "custom/countdown",
@@ -244,20 +243,21 @@
     "sway/workspaces",
   ],
   "modules-center": [
-    "sway/window"
+    "sway/window",
   ],
   "modules-right": [
-    // "mpd",
-    "idle_inhibitor",
-    // "pulseaudio",
+    "sway/mode",
     "network",
+    "backlight",
+    "battery"
+    // "idle_inhibitor",
+    // "mpd",
+    // "pulseaudio",
     // "keyboard-state"
     // "sway/language",
     // "cpu",
     // "memory",
     // "temperature",
-    "backlight",
-    "battery"
     // "battery#bat2",
     // "tray",
   ],
