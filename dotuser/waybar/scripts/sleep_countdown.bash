@@ -21,12 +21,12 @@ trap 'rm -f "$lockfile"' EXIT
 # 获取当前时间的秒数
 current_time=$(date +%s)
 
-# 获取今天 14:00 的秒数
-target_time=$(date -d "14:00" +%s)
+# 获取今天 13:30 的秒数
+target_time=$(date -d "13:30" +%s)
 
-# 如果已经过了 14:00，则计算明天 14:00
+# 如果已经过了 13:30，则计算明天 13:30
 if [[ $current_time -ge $target_time ]]; then
-    target_time=$(date -d "tomorrow 14:00" +%s)
+    target_time=$(date -d "tomorrow 13:00" +%s)
 fi
 
 # 计算剩余时间
