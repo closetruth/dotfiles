@@ -1,6 +1,7 @@
 i  7zip - 7-Zip file archiver with a high compression ratio
 i  acpi - displays information on ACPI devices
 i  adduser - add and remove users and groups
+i  alacritty - Fast, cross-platform, OpenGL terminal emulator
 i  alarm-clock-applet - alarm clock panel indicator
 i  alsa-utils - Utilities for configuring and using ALSA
 i  android-file-transfer - reliable MTP client with minimalistic UI
@@ -31,7 +32,6 @@ i  calibre - powerful and easy to use e-book manager
 i  cargo - Rust package manager
 i  clang-16 - C, C++ and Objective-C compiler
 i  clangd-16 - Language server that provides IDE-like features to editors
-i  code - Code editing. Redefined.
 i  copyq - Advanced clipboard manager with editing and scripting features
 i  coreutils - GNU core utilities
 i  cpio - GNU cpio -- a program to manage archives of files
@@ -54,9 +54,6 @@ i  dmidecode - SMBIOS/DMI table decoder
 i  dmsetup - Linux Kernel Device Mapper userspace library
 i  dosfstools - utilities for making and checking MS-DOS FAT filesystems
 i  dpkg - Debian package management system
-i  draw.io - draw.io desktop
-i  dunst - dmenu-ish notification-daemon
-i  dwarf-fortress - Slaves to Armok: God of Blood Chapter II: Dwarf Fortress
 i  e2fsprogs - ext2/ext3/ext4 file system utilities
 i  emacs-gtk - GNU Emacs editor (with GTK+ GUI support)
 i  evince - Document (PostScript, PDF) viewer
@@ -65,6 +62,7 @@ i  fcitx5-chinese-addons - Chinese-related addon for fcitx5 (metapackage)
 i  fcitx5-material-color - UI theme for fcitx5 following Material Design
 i  fcitx5-modules - Fcitx Input Method Framework v5 (core modules)
 i  fdisk - collection of partitioning utilities
+i  ffmpeg - Tools for transcoding, streaming and playing of multimedia files
 i  file - Recognize the type of data in a file using "magic" numbers
 i  findutils - utilities for finding files--find, xargs
 i  firefox-esr - Mozilla Firefox web browser - Extended Support Release (ESR)
@@ -84,7 +82,6 @@ i  gcc-12-base - GCC, the GNU Compiler Collection (base package)
 i  gdb - GNU Debugger
 i  gdisk - GPT fdisk text-mode partitioning tool
 i  gearhead - roguelike mecha role playing game, console version
-i  gimp - GNU Image Manipulation Program
 i  git - fast, scalable, distributed revision control system
 i  glibc-source - GNU C Library: sources
 i  gnome-system-monitor - Process viewer and system resource monitor for GNOME
@@ -93,7 +90,6 @@ i  goldendict - feature-rich dictionary lookup program
 i  gpgv - GNU privacy guard - signature verification tool
 i  grep - GNU grep, egrep and fgrep
 i  grim - command-line utility to make screenshots of Wayland desktops
-i  grimshot - Easy to use screenshot tool for sway
 i  grub-common - GRand Unified Bootloader (common files)
 i  grub-efi - GRand Unified Bootloader, version 2 (dummy package)
 i  gvfs - userspace virtual filesystem - GIO module
@@ -182,6 +178,8 @@ i  libnewt0.52 - Not Erik's Windowing Toolkit - text mode windowing with slang
 i  libnftables1 - Netfilter nftables high level userspace API library
 i  libnftnl11 - Netfilter nftables userspace API library
 i  libopenblas0-pthread - Optimized BLAS (linear algebra) library (shared lib, pthread)
+i  libopus-dev - Opus codec library development files
+i  libopus0 - Opus codec runtime library
 i  libp11-kit0 - library for loading and coordinating access to PKCS#11 modules - runtime
 i  libpam-modules - Pluggable Authentication Modules for PAM
 i  libpam-modules-bin - Pluggable Authentication Modules for PAM - helper binaries
@@ -284,7 +282,6 @@ i  ntfs-3g - read/write NTFS driver for FUSE
 i  ntpdate - Network Time Protocol client (transitional package)
 i  ntpsec-ntpdate - client for setting system time from NTP servers
 i  openssl - Secure Sockets Layer toolkit - cryptographic utility
-i  orchis-gtk-theme - Material Design theme for GNOME/GTK+ based desktop environments
 i  os-prober - utility to detect other OSes on a set of drives
 i  pacman-package-manager - Simple library-based package manager
 i  papirus-icon-theme - Papirus open source icon theme for Linux
@@ -292,12 +289,16 @@ i  passwd - change and administer password and group data
 i  pavucontrol - PulseAudio Volume Control
 i  pciutils - PCI utilities
 i  perl-base - minimal Perl system
+i  pipewire - audio and video processing engine multimedia server
 i  pipewire-pulse - PipeWire PulseAudio daemon
 i  plocate - much faster locate
 i  podman - engine to run OCI-based containers in Pods
+i  portaudio19-dev - Portable audio I/O - development files
 i  procps - /proc file system utilities
 i  proxychains4 - redirect connections through socks/http proxies (proxychains-ng)
+i  pulseaudio-utils - Command line tools for the PulseAudio sound server
 i  python3-pip - Python package installer
+i  python3-pyaudio - Python3 bindings for PortAudio v19
 i  python3-pygame - SDL bindings for games development (Python 3)
 i  python3-tk - Tkinter - Writing Tk applications with Python 3.x
 i  python3.11-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.11)
@@ -318,7 +319,6 @@ i  sed - GNU stream editor for filtering/transforming text
 i  sensible-utils - Utilities for sensible alternative selection
 i  signing-party - Various OpenPGP related tools
 i  smartmontools - control and monitor storage systems using S.M.A.R.T.
-i  softmaker-freeoffice-2024 - SoftMaker FreeOffice is a complete office suite.
 i  speedtest-cli - Command line interface for testing internet bandwidth using speedtest.net
 i  sudo - Provide limited super user privileges to specific users
 i  sway - i3-compatible Wayland compositor
@@ -344,7 +344,6 @@ i  usbutils - Linux USB utilities
 i  usr-is-merged - Transitional package to assert a merged-/usr system
 i  util-linux - miscellaneous system utilities
 i  util-linux-extra - interactive login tools
-i  v2raya - A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols
 i  va-driver-all - Video Acceleration (VA) API -- driver metapackage
 i  vim - Vi IMproved - enhanced vi editor
 i  vim-common - Vi IMproved - Common files
@@ -354,6 +353,7 @@ i  waybar - Highly customizable Wayland bar for Sway and Wlroots based composito
 i  whiptail - Displays user-friendly dialog boxes from shell scripts
 i  whois - intelligent WHOIS client
 i  wireless-tools - Tools for manipulating Linux Wireless Extensions
+i  wireplumber - modular session / policy manager for PipeWire
 i  wireshark-qt - network traffic analyzer - Qt version
 i  wl-clipboard - command line interface to the wayland clipboard
 i  wlogout - logout menu for wayland environments
@@ -361,8 +361,7 @@ i  wob - lightweight overlay volume/backlight/progress bar for wayland
 i  wofi - application launcher for wlroots based wayland compositors
 i  xdg-desktop-portal-wlr - xdg-desktop-portal backend for wlroots
 i  xdg-utils - desktop integration utilities from freedesktop.org
-i  xfce4 - Meta-package for the Xfce Lightweight Desktop Environment
-i  xfce4-panel - panel for Xfce4 desktop environment
+i  xfce4-settings - graphical application for managing Xfce settings
 i  xfce4-terminal - Xfce terminal emulator
 i  xvfb - Virtual Framebuffer 'fake' X server
 i  xwayland - X server for running X clients under Wayland
