@@ -4,7 +4,7 @@ countdown() {
     # 设置默认倒计时初始值（单位：秒）
     local DEFAULT_COUNTDOWN=3600
     local ALERT_TIME=600   # 10 分钟提醒
-    local LOCK_TIME=60     # 60 秒提醒
+    local LOCK_TIME=300     # 300 秒提醒
 
     local LOCKFILE="/tmp/lock_screen_countdown.lock"
     local STATUS_FILE="/tmp/lock_screen_countdown_status"
@@ -97,6 +97,15 @@ min_swaylock() {
     done
 }
 
+workspace_lock() {
+    local end=$((SECONDS + 300)) # 锁定工作区5分钟
+
+    while [ $SECONDS -lt $end ]; do
+        swaymsg workspace 1
+        sleep 1
+    done
+}
+
 # 主循环：每次倒计时结束后，执行锁屏操作，然后重新启动倒计时
 while true; do
     countdown
@@ -104,9 +113,9 @@ while true; do
     # 倒计时结束，自动锁屏
     notify-send "锁屏中" "时间已到，正在锁屏..."
 
-    # 切换到笔记工作区
-    swaymsg workspace 1
-
     # 锁屏
     min_swaylock
+
+    # 锁定工作区
+    workspace_lock
 done
