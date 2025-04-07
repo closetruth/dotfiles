@@ -59,9 +59,9 @@ countdown() {
             notify-send "锁屏提醒" "还有 10 分钟将自动锁屏，请注意保存工作！"
         fi
 
-        # 1 分钟提醒
+        # 5 分钟提醒
         if [ $COUNTDOWN -eq $LOCK_TIME ]; then
-            notify-send "锁屏提醒" "还有1分钟锁屏！请做好准备！"
+            notify-send "锁屏提醒" "还有5分钟锁屏！请做好准备！"
         fi
 
         sleep 1
