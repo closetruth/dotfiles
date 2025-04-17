@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 SAVE_FILE="$HOME/.cache/sway_session.json"
 
 save_session() {
