@@ -241,6 +241,7 @@
     "clock",
     "custom/text",
     "sway/workspaces",
+    "sway/scratchpad"
   ],
   "modules-center": [
     "sway/window",
