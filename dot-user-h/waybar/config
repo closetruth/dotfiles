@@ -229,7 +229,7 @@
   // Top waybar
 
 {
-  // "layer": "top", // Waybar at top layer
+  "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 10, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
@@ -243,9 +243,9 @@
     "sway/workspaces",
     "sway/scratchpad"
   ],
-  "modules-center": [
-    "sway/window",
-  ],
+  // "modules-center": [
+  //  "sway/window",
+  // ],
   "modules-right": [
     "sway/mode",
     "network",
@@ -264,10 +264,10 @@
   ],
   // Modules configuration
   "custom/countdown": {
-      "exec": "~/.config/waybar/scripts/lock_screen_countdown.bash",
+      "exec": "~/.config/waybar/scripts/lock-screen-countdown.bash",
   },
   "custom/sleep_countdown": {
-    "exec": "~/.config/waybar/scripts/sleep_countdown.bash",
+    "exec": "~/.config/waybar/scripts/sleep-countdown.bash",
   },
   "custom/text": {
     "format": "{}",

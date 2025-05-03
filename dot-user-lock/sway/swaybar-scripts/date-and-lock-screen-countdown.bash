@@ -2,12 +2,12 @@
 
 countdown() {
     # 设置默认倒计时初始值（单位：秒）
-    local DEFAULT_COUNTDOWN=3600
+    local DEFAULT_COUNTDOWN=1800
     local ALERT_TIME=600   # 10 分钟提醒
     local LOCK_TIME=300     # 300 秒提醒
 
-    local LOCKFILE="/tmp/lock_screen_countdown.lock"
-    local STATUS_FILE="/tmp/lock_screen_countdown_status"
+    local LOCKFILE="$HOME/.config/sway/swaybar-scripts/lock_screen_countdown.lock"
+    local STATUS_FILE="$HOME/.config/sway/swaybar-scripts/lock_screen_countdown_status"
 
     # 读取旧的倒计时状态（如果有），覆盖默认值
     if [ -f "$STATUS_FILE" ]; then
@@ -52,7 +52,7 @@ countdown() {
 
         local MINUTES=$((COUNTDOWN / 60))
         local SECONDS=$((COUNTDOWN % 60))
-        echo "$MINUTES:$SECONDS"
+	echo "$(date +'%Y-%m-%d %I:%M:%S %p') $MINUTES:$SECONDS "
 
         # 10 分钟提醒
         if [ $COUNTDOWN -eq $ALERT_TIME ]; then
@@ -78,7 +78,7 @@ min_swaylock() {
 
     while true; do
         # 调用 swaylock，等待用户解锁
-        swaylock -i ~/.config/waybar/lock_screen.jpg
+        swaylock -c 111111
 
         # 记录解锁时间
         local end_time=$(date +%s)
@@ -116,6 +116,5 @@ while true; do
     # 锁屏
     min_swaylock
 
-    # 锁定工作区
-    workspace_lock
 done
+ 

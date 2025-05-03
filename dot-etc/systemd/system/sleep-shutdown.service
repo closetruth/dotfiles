@@ -1,0 +1,12 @@
+[Unit]
+Description=Sleep ShutDown
+After=network.target  # 确保基础服务已启动（可选）
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/sleep-shutdown.bash  # 脚本
+TimeoutStartSec=0      # 避免超时等待
+RemainAfterExit=no     # 服务执行后不保留状态
+
+[Install]
+WantedBy=multi-user.target  # 在系统启动到多用户模式时触发

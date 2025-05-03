@@ -2,3 +2,4 @@ include ~/.config/sway/set.d/set.conf
 include ~/.config/sway/set.d/*
 include /etc/sway/config-vars.d/*
 include /etc/sway/config.d/*
+

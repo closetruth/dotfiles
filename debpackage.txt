@@ -57,6 +57,7 @@ i  grub-efi - GRand Unified Bootloader, version 2 (dummy package)
 i  gvfs - userspace virtual filesystem - GIO module
 i  gzip - GNU compression utilities
 i  hostname - utility to set/show the host name or domain name
+i  htop - interactive processes viewer
 i  ifupdown - high level tools to configure network interfaces
 i  init - metapackage ensuring an init system is installed
 i  init-system-helpers - helper tools for all init systems
@@ -175,6 +176,7 @@ i  nano - small, friendly text editor inspired by Pico
 i  ncurses-base - basic terminal type definitions
 i  ncurses-bin - terminal-related programs and man pages
 i  neofetch - Shows Linux System Information with Distribution Logo
+i  net-tools - NET-3 networking toolkit
 i  netbase - Basic TCP/IP networking system
 i  network-manager - network management framework (daemon and userspace tools)
 i  nftables - Program to control packet filtering rules by Netfilter project
