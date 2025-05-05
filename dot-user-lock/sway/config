@@ -219,3 +219,11 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# auto-start
+exec fcitx5 
+exec redshift -O 3500
+exec sh -c 'while true; do notify-send "I love linux!" "All distrobutions are best." -u normal; sleep 3600; done'
+exec goldendict
+exec copyq # Use "copyq config hide_main_window true & copyq config close_on_unfocus true"
+

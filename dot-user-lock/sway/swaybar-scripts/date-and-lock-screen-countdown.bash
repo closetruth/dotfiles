@@ -2,7 +2,7 @@
 
 countdown() {
     # 设置默认倒计时初始值（单位：秒）
-    local DEFAULT_COUNTDOWN=1800
+    local DEFAULT_COUNTDOWN=1200
     local ALERT_TIME=600   # 10 分钟提醒
     local LOCK_TIME=300     # 300 秒提醒
 
@@ -72,8 +72,8 @@ countdown() {
 }
 
 min_swaylock() {
-    # 设置最小锁定时长（单位：秒），这里为 600 秒（10 分钟）
-    local MIN_DURATION=600
+    # 设置最小锁定时长（单位：秒），这里为 1800 秒（30 分钟）
+    local MIN_DURATION=1800
     local start_time=$(date +%s)
 
     while true; do
@@ -87,11 +87,11 @@ min_swaylock() {
         local elapsed=$(( end_time - start_time ))
         
         if [ $elapsed -lt $MIN_DURATION ]; then
-            echo "检测到解锁时间不足 10 分钟（仅 ${elapsed} 秒），立即重新锁屏..."
-            notify-send "检测到解锁时间不足 10 分钟（仅 ${elapsed} 秒），立即重新锁屏..."
+            echo "检测到解锁时间不足 30 分钟（仅 ${elapsed} 秒），立即重新锁屏..."
+            notify-send "检测到解锁时间不足 30 分钟（仅 ${elapsed} 秒），立即重新锁屏..."
             # 循环继续，重新调用 swaylock
         else
-            echo "锁定时间已超过 10 分钟，允许解锁。"
+            echo "锁定时间已超过 30 分钟，允许解锁。"
             break
         fi
     done
