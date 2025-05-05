@@ -34,6 +34,7 @@ img {
 @-moz-document domain("bilibili.com") { 
   /* pc(电脑端) */
   #commentapp,                  /* Comments(评论) */
+  .right-entry-icon,              /* right-entry(右上角的各种图标) */
   .search-panel,                 /* Searches for hot searches(搜索的热搜) */
   .container.is-version8,       /* Video recommendations (视频推荐) */
   .bili-header__channel,        /* Video categories (视频分类) */
