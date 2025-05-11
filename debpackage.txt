@@ -52,7 +52,6 @@ i  gnome-themes-extra - Adwaita GTK 2 theme — engine
 i  goldendict - feature-rich dictionary lookup program
 i  gpgv - GNU privacy guard - signature verification tool
 i  grep - GNU grep, egrep and fgrep
-i  grimshot - Easy to use screenshot tool for sway
 i  grub-efi - GRand Unified Bootloader, version 2 (dummy package)
 i  gvfs - userspace virtual filesystem - GIO module
 i  gzip - GNU compression utilities
@@ -234,5 +233,6 @@ i  xfce4-settings - graphical application for managing Xfce settings
 i  xfce4-terminal - Xfce terminal emulator
 i  xwayland - X server for running X clients under Wayland
 i  xz-utils - XZ-format compression utilities
+i  yarnpkg - Fast, reliable and secure npm alternative
 i  zlib1g - compression library - runtime
 i  zlib1g-dev - compression library - development
