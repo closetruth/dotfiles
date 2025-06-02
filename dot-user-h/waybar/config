@@ -243,9 +243,10 @@
     "sway/workspaces",
     "sway/scratchpad"
   ],
-  // "modules-center": [
+  "modules-center": [
   //  "sway/window",
-  // ],
+    "custom/userinfo"
+  ],
   "modules-right": [
     "sway/mode",
     "network",
@@ -263,6 +264,9 @@
     // "tray",
   ],
   // Modules configuration
+  "custom/userinfo": {
+    "exec": "echo \"$(whoami)[$(tty)]\"",
+  },
   "custom/countdown": {
       "exec": "~/.config/waybar/scripts/lock-screen-countdown.bash",
   },
@@ -469,4 +473,3 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   }
 }]
-
