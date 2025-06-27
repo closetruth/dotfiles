@@ -5,9 +5,11 @@ i  apt-file - search for files within Debian packages (command-line interface)
 i  apt-rdepends - recursively lists package dependencies
 i  apt-utils - package management related utility programs
 i  aptitude - terminal-based package manager
+i  arch-install-scripts - scripts aimed at automating some menial tasks
 i  base-files - Debian base system miscellaneous files
 i  base-passwd - Debian base system master password and group files
 i  bash - GNU Bourne Again SHell
+i  binfmt-support - Support for extra binary formats
 i  bsdutils - basic utilities from 4.4BSD-Lite
 i  btrfs-progs - Checksumming Copy on Write Filesystem utilities
 i  build-essential - Informational list of build-essential packages
@@ -52,6 +54,7 @@ i  gnome-themes-extra - Adwaita GTK 2 theme — engine
 i  goldendict - feature-rich dictionary lookup program
 i  gpgv - GNU privacy guard - signature verification tool
 i  grep - GNU grep, egrep and fgrep
+i  grimshot - Easy to use screenshot tool for sway
 i  grub-efi - GRand Unified Bootloader, version 2 (dummy package)
 i  gvfs - userspace virtual filesystem - GIO module
 i  gzip - GNU compression utilities
@@ -64,6 +67,7 @@ i  iproute2 - networking and traffic control tools
 i  iputils-ping - Tools to test the reachability of network hosts
 i  isc-dhcp-client - DHCP client for automatically obtaining an IP address
 i  isc-dhcp-common - common manpages relevant to all of the isc-dhcp packages
+i  jq - lightweight and flexible command-line JSON processor
 i  kmod - tools for managing Linux kernel modules
 i  less - pager program similar to more
 i  libacl1 - access control list - shared library
@@ -134,6 +138,8 @@ i  libpopt0 - lib for parsing cmdline parameters
 i  libproc2-0 - library for accessing process information from /proc
 i  libreadline-dev - GNU readline and history libraries, development files
 i  libreadline8 - GNU readline and history libraries, run-time libraries
+i  libreoffice - office productivity suite (metapackage)
+i  libreoffice-gtk3 - office productivity suite -- GTK+ 3 integration
 i  libseccomp2 - high level interface to Linux seccomp filter
 i  libselinux1 - SELinux runtime shared libraries
 i  libsemanage-common - Common files for SELinux policy management libraries
@@ -168,9 +174,11 @@ i  locales - GNU C Library: National Language (locale) data [support]
 i  login - system login tools
 i  logrotate - Log rotation utility
 i  logsave - save the output of a command in a log file
+i  lzip - lossless data compressor based on the LZMA algorithm
 i  mako-notifier - lightweight notification daemon for Wayland compositors
 i  mawk - Pattern scanning and text processing language
 i  mount - tools for mounting and manipulating filesystems
+i  mpv - video player based on MPlayer/mplayer2
 i  nano - small, friendly text editor inspired by Pico
 i  ncurses-base - basic terminal type definitions
 i  ncurses-bin - terminal-related programs and man pages
@@ -182,6 +190,7 @@ i  nftables - Program to control packet filtering rules by Netfilter project
 i  nmap - The Network Mapper
 i  npm - package manager for Node.js
 i  ntpdate - Network Time Protocol client (transitional package)
+i  openssh-server - secure shell (SSH) server, for secure access from remote machines
 i  openssl - Secure Sockets Layer toolkit - cryptographic utility
 i  p7zip - 7zr file archiver with high compression ratio
 i  p7zip-full - 7z and 7za file archivers with high compression ratio
@@ -193,6 +202,7 @@ i  proxychains4 - redirect connections through socks/http proxies (proxychains-n
 i  pulseaudio - PulseAudio sound server
 i  python3-tk - Tkinter - Writing Tk applications with Python 3.x
 i  python3-venv - venv module for python3 (default python3 version)
+i  qemu-user-static - QEMU user mode emulation binaries (static version)
 i  qt5ct - Qt5 Configuration Utility
 i  qt6ct - Qt6 Configuration Tool
 i  readline-common - GNU readline and history libraries, common files
@@ -217,6 +227,7 @@ i  tk-dev - Toolkit for Tcl and X11 (default version) - development files
 i  trash-cli - command line trashcan utility
 i  tzdata - time zone and daylight-saving time data
 i  udev - /dev/ and hotplug management daemon
+i  unrar-free - Unarchiver for .rar files
 i  usr-is-merged - Transitional package to assert a merged-/usr system
 i  util-linux - miscellaneous system utilities
 i  util-linux-extra - interactive login tools
@@ -225,8 +236,12 @@ i  vim-common - Vi IMproved - Common files
 i  vim-tiny - Vi IMproved - enhanced vi editor - compact version
 i  waybar - Highly customizable Wayland bar for Sway and Wlroots based compositors
 i  wayland-protocols - wayland compositor protocols
+i  waypipe - Network transparency with Wayland
+i  wayvnc - VNC server for wlroots-based Wayland compositors
+i  wf-recorder - Utility program for screen recording of wlroots-based compositors
 i  wget - retrieves files from the web
 i  whiptail - Displays user-friendly dialog boxes from shell scripts
+i  wireshark-qt - network traffic analyzer - Qt version
 i  wl-clipboard - command line interface to the wayland clipboard
 i  wofi - application launcher for wlroots based wayland compositors
 i  xfce4-settings - graphical application for managing Xfce settings

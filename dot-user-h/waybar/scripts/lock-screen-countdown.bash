@@ -5,9 +5,19 @@ countdown() {
     local DEFAULT_COUNTDOWN=3600
     local ALERT_TIME=600   # 10 分钟提醒
     local LOCK_TIME=300     # 300 秒提醒
+    
+    # 先检查再创建（显式逻辑）
+    if [ ! -d "/tmp/lock-screen-countdown" ]; then
+        mkdir -p "/tmp/lock-screen-countdown"
+    fi
+    
+    LOCKFILE="/tmp/lock-screen-countdown/$(whoami)_lock_screen_countdown.lock"
+    STATUS_FILE="/tmp/lock-screen-countdown/lock_screen_countdown_status"
 
-    local LOCKFILE="/tmp/lock_screen_countdown.lock"
-    local STATUS_FILE="/tmp/lock_screen_countdown_status"
+    if [ ! -f "$STATUS_FILE" ]; then
+        echo -e "\n" > $STATUS_FILE
+        chmod 777 $STATUS_FILE
+    fi
 
     # 读取旧的倒计时状态（如果有），覆盖默认值
     if [ -f "$STATUS_FILE" ]; then
@@ -46,29 +56,59 @@ countdown() {
     # 捕获 SIGINT 和 SIGTERM 信号，调用清理函数
     trap exit_gracefully SIGINT SIGTERM
 
-    # 进入倒计时循环
-    while [ $COUNTDOWN -gt 0 ]; do
-        echo $COUNTDOWN > "$STATUS_FILE"  # 实时更新状态文件
+    local first_status=$(cat $STATUS_FILE)
+    sleep 1
+    local second_status=$(cat $STATUS_FILE)
+    if [ $((second_status - first_status)) -gt 0 ]; then
+        local COUNTDOWN=$(cat $STATUS_FILE)
+        # 进入倒计时循环
+        while [ $COUNTDOWN -gt 0 ]; do 
+          echo $COUNTDOWN > "$STATUS_FILE"  # 实时更新状态文件
 
-        local MINUTES=$((COUNTDOWN / 60))
-        local SECONDS=$((COUNTDOWN % 60))
-        echo "$MINUTES:$SECONDS"
+          local MINUTES=$((COUNTDOWN / 60))
+          local SECONDS=$((COUNTDOWN % 60))
+          echo "$MINUTES:$SECONDS"
 
-        # 10 分钟提醒
-        if [ $COUNTDOWN -eq $ALERT_TIME ]; then
+          # 10 分钟提醒
+          if [ $COUNTDOWN -eq $ALERT_TIME ]; then
             notify-send "锁屏提醒" "还有 10 分钟将自动锁屏，请注意保存工作！"
-        fi
+          fi
 
-        # 5 分钟提醒
-        if [ $COUNTDOWN -eq $LOCK_TIME ]; then
+          # 5 分钟提醒
+          if [ $COUNTDOWN -eq $LOCK_TIME ]; then
             notify-send "锁屏提醒" "还有5分钟锁屏！请做好准备！"
-        fi
+          fi
 
-        sleep 1
-        COUNTDOWN=$((COUNTDOWN - 1))
-    done
-    # 清理状态文件
-    rm -f "$LOCKFILE" "$STATUS_FILE"
+          sleep 1
+          COUNTDOWN=$((COUNTDOWN - 1))
+        done
+        # 清理状态文件
+        rm -f "$LOCKFILE" "$STATUS_FILE"
+    else
+        # 进入倒计时循环
+        while [ $COUNTDOWN -gt 0 ]; do
+          echo $COUNTDOWN > "$STATUS_FILE"  # 实时更新状态文件
+
+          local MINUTES=$((COUNTDOWN / 60))
+          local SECONDS=$((COUNTDOWN % 60))
+          echo "$MINUTES:$SECONDS"
+
+          # 10 分钟提醒
+          if [ $COUNTDOWN -eq $ALERT_TIME ]; then
+            notify-send "锁屏提醒" "还有 10 分钟将自动锁屏，请注意保存工作！"
+          fi
+
+          # 5 分钟提醒
+          if [ $COUNTDOWN -eq $LOCK_TIME ]; then
+            notify-send "锁屏提醒" "还有5分钟锁屏！请做好准备！"
+          fi
+
+          sleep 1
+          COUNTDOWN=$((COUNTDOWN - 1))
+        done
+        # 清理状态文件
+        rm -f "$LOCKFILE" "$STATUS_FILE"
+    fi
 }
 
 min_swaylock() {
