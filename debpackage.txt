@@ -1,5 +1,6 @@
 i  adduser - add and remove users and groups
 i  alsa-utils - Utilities for configuring and using ALSA
+i  android-file-transfer - reliable MTP client with minimalistic UI
 i  apt - commandline package manager
 i  apt-file - search for files within Debian packages (command-line interface)
 i  apt-rdepends - recursively lists package dependencies
