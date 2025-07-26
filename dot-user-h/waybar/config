@@ -130,9 +130,10 @@
     "format": "{}\n%\n"
   },
   "temperature": {
+    "interval": 1,
     // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    "critical-threshold": 80,
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+    "critical-threshold": 90,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}\n°\nC\n{icon}",
     "format-icons": [
