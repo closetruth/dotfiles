@@ -20,8 +20,8 @@
     "idle_inhibitor",
     "cpu",
     "memory",
-    "tray",
-    "temperature"
+    "tray"
+    // "temperature"
       // "mpd",
     // "battery",
     // "network",
